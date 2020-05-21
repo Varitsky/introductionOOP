@@ -11,7 +11,7 @@ public class Employee {
     private String position;
     private String eMail;
     private long phoneNumber;
-    private long salary;
+    private Long salary;
     private int age;
 
 
@@ -37,7 +37,7 @@ public class Employee {
         this.phoneNumber = phoneNumber;
     }
 
-    public void setSalary(long salary) {
+    public void setSalary(Long salary) {
         this.salary = salary;
     }
 
@@ -67,7 +67,7 @@ public class Employee {
         return phoneNumber;
     }
 
-    public long getSalary() {
+    public Long getSalary() {
         return salary;
     }
 
@@ -78,7 +78,7 @@ public class Employee {
 
     //CONSTRUCTORS
 
-    public Employee(int idEmployee, String name, String position, String eMail, long phoneNumber, long salary, int age) {
+    public Employee(int idEmployee, String name, String position, String eMail, long phoneNumber, Long salary, int age) {
         this.idEmployee = idEmployee;
         this.name = name;
         this.position = position;
@@ -88,7 +88,7 @@ public class Employee {
         this.age = age;
     }
 
-    public Employee(int idEmployee, String name, String position, long phoneNumber, long salary, int age) {
+    public Employee(int idEmployee, String name, String position, long phoneNumber, Long salary, int age) {
         this.idEmployee = idEmployee;
         this.name = name;
         this.position = position;
@@ -97,7 +97,7 @@ public class Employee {
         this.age = age;
     }
 
-    public Employee(int idEmployee, String name, String position, String eMail, long salary, int age) {
+    public Employee(int idEmployee, String name, String position, String eMail, Long salary, int age) {
         this.idEmployee = idEmployee;
         this.name = name;
         this.position = position;
@@ -106,7 +106,7 @@ public class Employee {
         this.age = age;
     }
 
-    public Employee(int idEmployee, String name, String position, long salary, int age) {
+    public Employee(int idEmployee, String name, String position, Long salary, int age) {
         this.idEmployee = idEmployee;
         this.name = name;
         this.position = position;
@@ -129,7 +129,13 @@ public class Employee {
         if (this.phoneNumber!=0) {
             System.out.println("Номер телефона: " + this.phoneNumber);
         }
-        System.out.println("Оклад: "+this.salary);
+
+
+        if (this.salary!=null) {
+            System.out.println("Оклад: " + this.salary);
+        }
+
+
         System.out.println("Возраст: "+this.age);
 
     }

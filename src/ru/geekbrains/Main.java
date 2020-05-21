@@ -8,10 +8,10 @@ public class Main {
         Employee[] employeeArray = new Employee[staff];
         //ФИО, должность, email, телефон, зарплата, возраст;
         //телефон или/и почту можно не указывать
-        
-        employeeArray[0] = new Employee(1, "VARITSKII DMITRII", "Engineer", "varitsky@gmail.com", 8_926_477_77_84L, 20_000, 31);
+
+        employeeArray[0] = new Employee(1, "VARITSKII DMITRII", "Engineer", "varitsky@gmail.com", 8_926_477_77_84L, 20_000L, 31);
         employeeArray[1] = new Employee(2, "AID KRONOVICH", "God of Underworld of the dead", 9223372036854775807L, 2147483647);
-        employeeArray[2] = new Employee(3, "Ryan", "Good boy", 110_000, 1);
+        employeeArray[2] = new Employee(3, "Ryan", "Good boy", 110_000L, 1);
         employeeArray[3] = new Employee(4, "ARTEMII PANARIN", "Hockey player", "newyorkrangers@thegarden.com",
                 1_212_465_6000L, 825097645000L, 28);
 
@@ -19,12 +19,12 @@ public class Main {
         employeeArray[4].setIdEmployee(5);
         employeeArray[4].setName("Jesus");
         employeeArray[4].setPosition("Messiah");
-        employeeArray[4].setSalary(0);
+        employeeArray[4].setSalary(0L);
         employeeArray[4].setAge(2020);
 
         printOutTheListOfEmmployeesWhoIsOverAge(employeeArray, 40);
 
-        employeeArray[0].printInfo();
+        employeeArray[4].printInfo();
 
     }
 
@@ -37,7 +37,4 @@ public class Main {
         }
         System.out.println();
     }
-
-
-
 }
