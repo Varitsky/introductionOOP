@@ -8,7 +8,7 @@ public class Main {
         Employee[] employeeArray = new Employee[staff];
         //ФИО, должность, email, телефон, зарплата, возраст;
         //телефон или/и почту можно не указывать
-        
+
         employeeArray[0] = new Employee(1, "VARITSKII DMITRII", "Engineer", "varitsky@gmail.com", 8_926_477_77_84L, 20_000, 31);
         employeeArray[1] = new Employee(2, "AID KRONOVICH", "God of Underworld of the dead", 9223372036854775807L, 2147483647);
         employeeArray[2] = new Employee(3, "Ryan", "Good boy", 110_000, 1);
@@ -37,7 +37,4 @@ public class Main {
         }
         System.out.println();
     }
-
-
-
 }
